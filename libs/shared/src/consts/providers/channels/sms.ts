@@ -12,6 +12,7 @@ import {
   burstSmsConfig,
   clickatellConfig,
   kannelConfig,
+  gupshupWhatsappConfig,
 } from '../credentials';
 import { SmsProviderIdEnum } from '../provider.enum';
 
@@ -116,5 +117,14 @@ export const smsProviders: IProviderConfig[] = [
     betaVersion: true,
     docReference: 'https://www.kannel.org/doc.shtml',
     logoFileName: { light: 'kannel.png', dark: 'kannel.png' },
+  },
+  {
+    id: SmsProviderIdEnum.GupshupWhatsapp,
+    displayName: 'Gupshup Whatsapp',
+    channel: ChannelTypeEnum.SMS,
+    credentials: gupshupWhatsappConfig,
+    betaVersion: true,
+    docReference: 'https://docs.gupshup.io/docs/session-messages',
+    logoFileName: { light: 'gupshup-whatsapp.svg', dark: 'gupshup-whatsapp.svg' },
   },
 ];

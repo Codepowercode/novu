@@ -541,3 +541,19 @@ export const listmonkEmailConfig: IConfigCredentials[] = [
     required: true,
   },
 ];
+
+export const gupshupWhatsappConfig: IConfigCredentials[] = [
+  {
+    key: CredentialsKeyEnum.ApiKey,
+    displayName: 'API KEY',
+    type: 'string',
+    required: true,
+  },
+  {
+    key: CredentialsKeyEnum.ApplicationId,
+    displayName: 'APP Name',
+    type: 'string',
+    required: true,
+  },
+  ...smsConfigBase,
+];

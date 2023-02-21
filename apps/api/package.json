@@ -74,6 +74,7 @@
     "@novu/twilio": "^0.11.0",
     "@novu/kannel": "^0.11.0",
     "@novu/listmonkEmail": "^0.11.0",
+    "@novu/gupshup-whatsapp": "^0.11.0",
     "@sendgrid/mail": "^7.6.0",
     "@sentry/hub": "7.37.1",
     "@sentry/node": "^7.12.1",

@@ -55,6 +55,7 @@ export enum SmsProviderIdEnum {
   BurstSms = 'burst-sms',
   Clickatell = 'clickatell',
   Kannel = 'kannel',
+  GupshupWhatsapp = 'gupshup-whatsapp',
 }
 
 export enum ChatProviderIdEnum {
