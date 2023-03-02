@@ -557,3 +557,24 @@ export const gupshupWhatsappConfig: IConfigCredentials[] = [
   },
   ...smsConfigBase,
 ];
+
+export const gotifyConfig: IConfigCredentials[] = [
+  {
+    key: CredentialsKeyEnum.Host,
+    displayName: 'Host',
+    type: 'string',
+    required: true,
+  },
+  {
+    key: CredentialsKeyEnum.Port,
+    displayName: 'Port',
+    type: 'string',
+    required: true,
+  },
+  {
+    key: CredentialsKeyEnum.Token,
+    displayName: 'App Token',
+    type: 'string',
+    required: true,
+  },
+];

@@ -1,4 +1,4 @@
-import { apnsConfig, fcmConfig, expoConfig } from '../credentials';
+import { apnsConfig, fcmConfig, expoConfig, gotifyConfig } from '../credentials';
 import { PushProviderIdEnum } from '../provider.enum';
 import { IProviderConfig } from '../provider.interface';
 
@@ -28,6 +28,15 @@ export const pushProviders: IProviderConfig[] = [
     credentials: apnsConfig,
     docReference: 'https://docs.novu.co/channels/push/apns',
     logoFileName: { light: 'apns.png', dark: 'apns.png' },
+    betaVersion: true,
+  },
+  {
+    id: PushProviderIdEnum.GOTIFY,
+    displayName: 'Gotify',
+    channel: ChannelTypeEnum.PUSH,
+    credentials: gotifyConfig,
+    docReference: 'https://gotify.net/api-docs#/message/createMessage',
+    logoFileName: { light: 'gotify.png', dark: 'gotify.png' },
     betaVersion: true,
   },
 ];
